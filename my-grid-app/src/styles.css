@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    background-color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .cell.active {
+    background-color: black;
+  }
+  
